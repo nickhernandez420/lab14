@@ -16,7 +16,7 @@ targety1 = 20
 targetx2 = 280
 targety2 = 80
 target = drawpad.create_rectangle(targetx1,targety1,targetx2,targety2, fill="blue")
-player = drawpad.create_rectangle(240,240,260,260, fill="red")
+player = drawpad.create_rectangle(240,240,260,260, fill="pink")
 
 
 
@@ -29,22 +29,8 @@ class MyApp:
 		self.myContainer1.pack()
 		
 		self.button1 = Button(self.myContainer1)
-		self.button1.configure(text="up", background= "purple")
+		self.button1.configure(text="Up", background= "green")
 		self.button1.grid(row=0,column=0)
-					
-		self.button1 = Button(self.myContainer1)
-		self.button1.configure(text="down", background= "purple")
-		self.button1.grid(row=1,column=0)
-					
-		self.button1 = Button(self.myContainer1)
-		self.button1.configure(text="left", background= "purple")
-		self.button1.grid(row=1,column=2)
-		
-		self.button1 = Button(self.myContainer1)
-		self.button1.configure(text="right", background= "purple")
-		self.button1.grid(row=1,column=3)
-		
-	
 					
 		# "Bind" an action to the first button												
 		self.button1.bind("<Button-1>", self.button1Click)
